@@ -1,0 +1,94 @@
+/* ---- */
+/* --- */
+/* -- */
+/* - */
+/* + */
+/* ++ */
+/* +++ */
+/* ++++ */
+/* red */
+/* orange */
+/* yellow */
+/* green */
+/* aqua/cyan */
+/* blue */
+/* purple */
+/* brown */
+* {
+  all: unset;
+  color: #fbf1c7; }
+
+.bar {
+  background-color: rgba(40, 40, 40, 0.1);
+  color: #fbf1c7;
+  min-height: 32px; }
+
+.bar .workspaces {
+  margin: 0.2rem 0.5rem; }
+  .bar .workspaces button {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 2rem;
+    margin: 0.7rem 0.2rem;
+    min-width: 1rem;
+    transition: 100ms linear; }
+  .bar .workspaces .active {
+    min-width: 2rem; }
+
+.bar .workspaces {
+  margin: 0 0.4rem; }
+  .bar .workspaces .workspace {
+    border-radius: 2rem;
+    margin: 0.55rem 0.4rem;
+    transition: 100ms linear;
+    background-color: #3c3836;
+    min-width: 1.2rem; }
+  .bar .workspaces .active {
+    background-color: #bdae93;
+    min-width: 3rem; }
+  .bar .workspaces .workspace:not(.active):hover {
+    background-color: #504945; }
+.bar .date {
+  margin: 0.4rem 0.4rem;
+  padding: 0.2rem 0.6rem; }
+.bar .battery {
+  margin: 0.4rem 0.4rem;
+  padding: 0.2rem 0.6rem; }
+  .bar .battery .battery_label, .bar .battery .battery_icon {
+    margin-right: 0.4rem; }
+  .bar .battery.charging .battery_label {
+    color: #b8bb26; }
+  .bar .battery .battery_label.warning {
+    color: #fe8019; }
+  .bar .battery .battery_label.critical {
+    color: #fb4934; }
+.bar .system-tray .tray-item {
+  transition: 100ms linear;
+  margin: 0.3rem 0.1rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.5rem; }
+  .bar .system-tray .tray-item:hover {
+    background-color: #504945; }
+
+tooltip {
+  background-color: #3c3836;
+  padding: 4rem 8rem;
+  border-radius: 1rem;
+  border: 0.1rem solid #bdae93; }
+
+menu {
+  background-color: #3c3836;
+  padding: 1rem;
+  border-radius: 1rem; }
+  menu separator {
+    min-height: 0.05rem;
+    margin: 0.5rem 0;
+    background-color: #bdae93; }
+  menu menuitem {
+    border-radius: 0;
+    transition: 100ms linear;
+    padding: 0.4rem 0.7rem;
+    border-radius: 0.5rem; }
+    menu menuitem:hover {
+      background-color: #504945; }
+
+/*# sourceMappingURL=style.css.map */
